@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aarathy AR | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+
+    <!-- Starfield Canvas -->
+    <canvas id="starfield"></canvas>
+
+    <nav id="navbar">
+        <div class="logo">AARATHY<span>AR</span></div>
+        <div class="nav-links">
+            <a href="#home"      class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#resume">Skills</a>
+            <a href="#projects">Work</a>
+            <a href="#interests">Interests</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="contact-num">☏ +91 7736906684</div>
+    </nav>
+
+    <div class="social-sidebar">
+        <a href="https://github.com/25bcya39-ctrl"              target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/aarathy-ar-100a663b9/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/aarrrathhyyy/"        target="_blank"><i class="fab fa-instagram"></i></a>
+        <div class="vertical-line"></div>
+    </div>
+
+    <!-- HERO -->
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <p class="name-top" data-text="AARATHY">AARATHY</p>
+            <h1 class="glitch" data-text="AR">AR</h1>
+            <p class="sub-role"><span class="typewriter"></span></p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn-primary">View My Work</a>
+                <a href="#contact"  class="btn-ghost">Let's Talk</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>SCROLL</span>
+            <div class="scroll-line"></div>
+        </div>
+    </header>
+
+    <!-- ABOUT -->
+    <section class="about-section" id="about">
+        <div class="section-title">
+            <h3>BIOGRAPHY</h3>
+            <h2>WHO <span>AM I?</span></h2>
+        </div>
+        <div class="about-content">
+            <p>I am a BCA student at Kristu Jayanti College specializing in modern web ecosystems. I bridge the gap between complex backend logic and intuitive frontend design, ensuring every project is functional and aesthetically striking.</p>
+        </div>
+    </section>
+
+    <!-- LANGUAGES -->
+    <section class="languages-section">
+        <div class="languages-container">
+            <div class="lang-icon"><i class="fab fa-html5"></i><span>HTML5</span></div>
+            <div class="lang-icon"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
+            <div class="lang-icon"><i class="fab fa-js"></i><span>JavaScript</span></div>
+            <div class="lang-icon"><i class="fab fa-python"></i><span>Python</span></div>
+            <div class="lang-icon"><i class="fab fa-node-js"></i><span>Node.js</span></div>
+            <div class="lang-icon"><i class="fab fa-git-alt"></i><span>Git</span></div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="resume-section" id="resume">
+        <div class="section-title">
+            <h3>EXPERTISE</h3>
+            <h2>TECHNICAL <span>PROFICIENCY</span></h2>
+        </div>
+        <div class="resume-grid">
+            <div class="skill-item">
+                <div class="skill-info"><span>Frontend Architecture</span><span>90%</span></div>
+                <div class="progress-bar"><div class="line" style="--w:90%"></div></div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-info"><span>UI/UX Design</span><span>85%</span></div>
+                <div class="progress-bar"><div class="line" style="--w:85%"></div></div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-info"><span>Data Manipulation (Pandas/NumPy)</span><span>75%</span></div>
+                <div class="progress-bar"><div class="line" style="--w:75%"></div></div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-info"><span>Node.js / Express</span><span>70%</span></div>
+                <div class="progress-bar"><div class="line" style="--w:70%"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services-section">
+        <div class="section-title">
+            <h3>OFFERINGS</h3>
+            <h2>HOW I CAN <span>HELP YOU</span></h2>
+        </div>
+        <div class="services-grid">
+            <div class="service-box">
+                <i class="fas fa-code"></i>
+                <h4>Web Development</h4>
+                <p>Building responsive, high-performance websites from scratch.</p>
+            </div>
+            <div class="service-box">
+                <i class="fas fa-layer-group"></i>
+                <h4>Full-stack Solutions</h4>
+                <p>Handling client and server-side architecture seamlessly.</p>
+            </div>
+            <div class="service-box">
+                <i class="fas fa-mobile-screen"></i>
+                <h4>Responsive Design</h4>
+                <p>Ensuring your digital presence looks perfect on every device.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS (dynamic from DB) -->
+    <section class="projects-section" id="projects">
+        <div class="section-title">
+            <h3>PORTFOLIO</h3>
+            <h2>SELECTED <span>WORK</span></h2>
+        </div>
+        <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="HTML">HTML/CSS</button>
+            <button class="filter-btn" data-filter="JavaScript">JavaScript</button>
+            <button class="filter-btn" data-filter="Python">Python</button>
+            <button class="filter-btn" data-filter="Node.js">Node.js</button>
+        </div>
+        <div class="projects-grid" id="projectsGrid">
+            <div class="projects-loading">
+                <div class="spinner"></div>
+                <p>Loading projects…</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERESTS -->
+    <section class="interests-section" id="interests">
+        <div class="section-title">
+            <h3>PERSONAL</h3>
+            <h2>HOBBIES & <span>INTERESTS</span></h2>
+        </div>
+        <div class="interests-container">
+            <div class="interest-card" onclick="openModal('dance')">
+                <i class="fas fa-person-rays"></i>
+                <h4>Dance</h4>
+                <p>Click to see my journey through movement.</p>
+            </div>
+            <div class="interest-card highlighted" onclick="openModal('horology')">
+                <i class="fas fa-stopwatch"></i>
+                <h4>Vintage Horology</h4>
+                <p>Click to explore my collection.</p>
+            </div>
+            <div class="interest-card" onclick="openModal('exploration')">
+                <i class="fas fa-map-location-dot"></i>
+                <h4>Exploration</h4>
+                <p>Click to discover hidden spots.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM (saves to SQLite via API) -->
+    <section class="contact-section" id="contact">
+        <div class="section-title">
+            <h3>GET IN TOUCH</h3>
+            <h2>LET'S <span>CONNECT</span></h2>
+        </div>
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <div class="c-item"><i class="fas fa-envelope"></i><span>Aarathy.AR@gmail.com</span></div>
+                <div class="c-item"><i class="fas fa-phone"></i><span>+91 7736906684</span></div>
+                <div class="c-item"><i class="fas fa-map-marker-alt"></i><span>Bengaluru, India</span></div>
+                <div class="contact-socials">
+                    <a href="https://github.com/25bcya39-ctrl"              target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/aarathy-ar-100a663b9/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/aarrrathhyyy/"        target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <form id="contactForm" class="contact-form" novalidate>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Aarathy AR" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="hello@email.com" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Project Collaboration" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Tell me about your project…" required></textarea>
+                </div>
+                <div id="formStatus" class="form-status"></div>
+                <button type="submit" class="btn-primary submit-btn">
+                    <span class="btn-text">Send Message</span>
+                    <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- HOBBY MODAL -->
+    <div id="hobbyModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="final-footer">
+        <div class="footer-top">
+            <h2>READY TO START A <span>PROJECT?</span></h2>
+            <a href="mailto:Aarathy.AR@gmail.com" class="footer-email">Aarathy.AR@gmail.com</a>
+            <div class="footer-socials">
+                <a href="https://github.com/25bcya39-ctrl"              target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/aarathy-ar-100a663b9/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/aarrrathhyyy/"        target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Aarathy AR. Built with passion in Bengaluru.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

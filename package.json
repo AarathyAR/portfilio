@@ -1,0 +1,20 @@
+{
+  "name": "hon",
+  "version": "1.0.0",
+  "description": "A personal portfolio site with an **Node.js + Express** backend and **SQLite** database for storing contact messages and managing a dynamic project gallery.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "better-sqlite3": "^12.8.0",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.3.2"
+  }
+}
